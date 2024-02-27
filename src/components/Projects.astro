@@ -1,7 +1,9 @@
 ---
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
+import React from "./icons/React.astro"
+import NodeJS from "./icons/NodeJS.astro"
+import Express from "./icons/Express.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -11,10 +13,20 @@ const TAGS = {
     class: "bg-black text-white",
     icon: NextJS,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
+  REACT: {
+    name: "React.js",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+    icon: React,
+  },
+  NODE: {
+    name: "Node.js",
+    class: "bg-black text-white",
+    icon: NodeJS,
+  },
+  EXPRESS: {
+    name: "Express.js",
+    class: "bg-[#4CAF50] text-white",
+    icon: Express,
   },
 }
 const PROJECTS = [
@@ -25,7 +37,7 @@ const PROJECTS = [
     link: "https://video-game-client-kmicac.vercel.app/",
     github: "https://github.com/Kmicac/VideoGame-Client",
     image: "/Projects/VideoGame.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NODE, TAGS.EXPRESS, TAGS.REACT],
   },
   {
     title: "MoviePlay",
@@ -33,7 +45,7 @@ const PROJECTS = [
       "Todavia no colocamos nada aqui, la pagina esta en mejoras. Proximamente una mejor descripcion.",
     link: "https://kmicac.github.io/MoviePlay-Client/",
     image: "/Projects/MoviePlay.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NODE, TAGS.NEXT, TAGS.REACT],
   },
 ]
 ---
